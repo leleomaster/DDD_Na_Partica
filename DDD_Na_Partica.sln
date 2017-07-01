@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apresentation", "1-Apresentation", "{5772E248-3553-45AC-924A-AAA12525F991}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{19536765-8A13-4AD6-8289-4E9E60A42F59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{F8279A13-C14A-4904-801D-93A03DB5EA32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrastructure", "4-Infrastructure", "{C23710EE-40D9-4EC0-BA9C-B71EC752DC15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Na_Partica.Application", "DDD_Na_Partica.Application\DDD_Na_Partica.Application.csproj", "{AED7ADCA-2216-49C8-A12F-96C99044D88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Na_Partica.Domain", "DDD_Na_Partica.Domain\DDD_Na_Partica.Domain.csproj", "{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Na_Partica.Infrastructure.Repository", "DDD_Na_Partica.Infrastructure.Repository\DDD_Na_Partica.Infrastructure.Repository.csproj", "{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-TDD", "5-TDD", "{87503D83-562C-49C5-8268-38B6DE14A97F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Na_Partica.Tests", "DDD_Na_Partica.Tests\DDD_Na_Partica.Tests.csproj", "{7A93E1D9-99CA-4712-8FA2-20F3E66B282B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD_Na_Partica.Web", "DDD_Na_Partica.Web\DDD_Na_Partica.Web.csproj", "{8ECD6D2B-CF96-4900-AD9D-66CBB1D2B671}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AED7ADCA-2216-49C8-A12F-96C99044D88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED7ADCA-2216-49C8-A12F-96C99044D88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED7ADCA-2216-49C8-A12F-96C99044D88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED7ADCA-2216-49C8-A12F-96C99044D88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A93E1D9-99CA-4712-8FA2-20F3E66B282B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A93E1D9-99CA-4712-8FA2-20F3E66B282B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A93E1D9-99CA-4712-8FA2-20F3E66B282B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A93E1D9-99CA-4712-8FA2-20F3E66B282B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECD6D2B-CF96-4900-AD9D-66CBB1D2B671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECD6D2B-CF96-4900-AD9D-66CBB1D2B671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECD6D2B-CF96-4900-AD9D-66CBB1D2B671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECD6D2B-CF96-4900-AD9D-66CBB1D2B671}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AED7ADCA-2216-49C8-A12F-96C99044D88C} = {19536765-8A13-4AD6-8289-4E9E60A42F59}
+		{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9} = {F8279A13-C14A-4904-801D-93A03DB5EA32}
+		{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3} = {C23710EE-40D9-4EC0-BA9C-B71EC752DC15}
+		{7A93E1D9-99CA-4712-8FA2-20F3E66B282B} = {87503D83-562C-49C5-8268-38B6DE14A97F}
+		{8ECD6D2B-CF96-4900-AD9D-66CBB1D2B671} = {5772E248-3553-45AC-924A-AAA12525F991}
+	EndGlobalSection
+EndGlobal
