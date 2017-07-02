@@ -1,0 +1,77 @@
+﻿@model DDD_Na_Partica.Web.Models.UsuarioViewModel
+
+@{
+    ViewBag.Title = "CadAlter";
+}
+
+<h2>Usuário</h2>
+
+@using (Html.BeginForm("CadAlter", "Usuario", FormMethod.Post, new { id = "fmUsuario", encType = "multipar/form-data" }))
+{
+
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label class="form-control-label">
+                    @Html.LabelFor(u => u.Nome)
+                </label>
+                <div class="controls">
+                    @Html.TextBoxFor(u => u.Nome, new { @class = "span12 m-wrap", maxlength = "100" })
+                    <span class="colorRed help-block">
+                        @Html.ValidationMessageFor(u => u.Nome)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label class="form-control-label">
+                    @Html.LabelFor(u => u.Login)
+                </label>
+                <div class="controls">
+                    @Html.TextBoxFor(u => u.Login, new { @class = "span12 m-wrap", maxlength = "100" })
+                    <span class="colorRed help-block">
+                        @Html.ValidationMessageFor(u => u.Login)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label class="form-control-label">
+                    @Html.LabelFor(u => u.Senha)
+                </label>
+                <div class="controls">
+                    @Html.PasswordFor(u => u.Senha, new { @class = "span12 m-wrap", maxlength = "100" })
+                    <span class="colorRed help-block">
+                        @Html.ValidationMessageFor(u => u.Senha)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label class="form-control-label">
+                    @Html.LabelFor(u => u.Ativo)
+                </label>
+                <div class="controls">
+                    @Html.CheckBoxFor(u => u.Ativo, new { @class = "span12 m-wrap", maxlength = "100" })
+                    <span class="colorRed help-block">
+                        @Html.ValidationMessageFor(u => u.Ativo)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-default" value="Salvar" />
+}
