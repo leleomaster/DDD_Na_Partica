@@ -14,6 +14,7 @@ namespace DDD_Na_Partica.Web.Controllers
      https://www.youtube.com/playlist?list=PLb2HQ45KP0WvzEKQ56AZ7j5-Gsay9yPOg
      */
 
+
     public class UsuarioController : Controller
     {
         private static List<UsuarioViewModel> ListaUsuario = null;
