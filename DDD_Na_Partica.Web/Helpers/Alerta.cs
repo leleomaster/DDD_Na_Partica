@@ -16,6 +16,7 @@ namespace DDD_Na_Partica.Web.Helpers
         public bool Dismissable { get; set; }
     }
 
+
     public static class AlertaStyle
     {
         public const string Success = "success";
