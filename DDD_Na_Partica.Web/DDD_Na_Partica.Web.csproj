@@ -159,6 +159,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\TesteViewBag_Data_TempData.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -170,6 +171,8 @@
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\CadAlter.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutNew.cshtml" />
+    <Content Include="Views\Shared\_partial_Teste_ViewBag_Data_TempData.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,6 +184,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\Site\css\" />
     <Folder Include="Content\Site\Imagens\" />
+    <Folder Include="Helpers\" />
     <Folder Include="Scripts\Site\" />
   </ItemGroup>
   <ItemGroup>

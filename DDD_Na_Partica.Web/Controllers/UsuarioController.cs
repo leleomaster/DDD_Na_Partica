@@ -7,10 +7,10 @@ using System.Web.Mvc;
 
 namespace DDD_Na_Partica.Web.Controllers
 {
-    // https://www.youtube.com/watch?v=ywWWhIJYoDY&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM&index=7
+    // https://www.youtube.com/watch?v=ynlY4ovHwcY&index=8&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM
 
     /*
-    teste
+    
      * Fazer depois Curso de TDD mais nUnit
      https://www.youtube.com/playlist?list=PLb2HQ45KP0WvzEKQ56AZ7j5-Gsay9yPOg
      */

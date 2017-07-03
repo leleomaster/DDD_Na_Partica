@@ -1,0 +1,21 @@
+﻿@model DDD_Na_Partica.Web.Models.TesteViewBag_Data_TempData
+
+
+<div class="row">
+    <h3>@Model.Titulo</h3>
+    <br />
+    <p class="w-100">
+        @Model.Descricao
+    </p>
+</div>
+<div class="row">
+    <div class="alert-danger w-50">
+        @{foreach (var nome in @Model.lista)
+            {
+                <label class="col-3">
+                    @nome
+                </label>
+            }
+        }
+    </div>
+</div>

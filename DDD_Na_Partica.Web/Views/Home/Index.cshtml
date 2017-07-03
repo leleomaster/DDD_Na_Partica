@@ -1,7 +1,77 @@
-﻿
+﻿@using DDD_Na_Partica.Web.Models
 @{
     ViewBag.Title = "Index";
+
+    TesteViewBag_Data_TempData viewBag = new TesteViewBag_Data_TempData();
+
+    viewBag.Titulo = "ViewBag.Nomes";
+    viewBag.Descricao = @" Utilizado para passar valores de controller para View.<br />
+        Não passa valores de controller para controller.<br />
+        Valores tipados.";
+    viewBag.lista = ViewBag.Nomes;
+
+    TesteViewBag_Data_TempData viewData = new TesteViewBag_Data_TempData();
+
+    viewData.Titulo = "ViewData['Nomes_ViewData']";
+    viewData.Descricao = @" Utilizado para passar valores de controller para View.<br />
+        Não passa valores de controller para controller.<br />
+        Valores não tipados. Caso o valor seja um objet ou uma lista, tem que converter para utilizá-lo.";
+    viewData.lista = (List<string>)ViewData["Nomes_ViewData"];
+
+    TesteViewBag_Data_TempData tempData = new TesteViewBag_Data_TempData();
+
+    tempData.Titulo = "TempData['Nomes_TempData']";
+    tempData.Descricao = @"Utilizado para passar valores de controller para controller e controller para View.<br />
+        Se mantém na memória apenas no request atual, após outro resquest a memória é limpada.< br />
+        Valores Não tipados.";
+    tempData.lista = (List<string>)TempData["Nomes_TempData"];
+
 }
 
 <h2>Index</h2>
 
+@{
+    Html.RenderPartial("_partial_Teste_ViewBag_Data_TempData", viewBag);
+}
+
+@{
+    Html.RenderPartial("_partial_Teste_ViewBag_Data_TempData", viewData);
+}
+
+@{
+    Html.RenderPartial("_partial_Teste_ViewBag_Data_TempData", tempData);
+}
+
+
+<div class="row">
+    <div class="alert-success">
+        @ViewBag.Id
+    </div>
+</div>
+
+<div class="row" style="margin: 10px;">
+    <div class="col-md-4" style="background-color:red; padding: 20px;">Col 1</div>
+    <div class="col-md-4" style="background-color:yellow; padding: 20px;">Col 2</div>
+    <div class="col-md-4" style="background-color:green; padding: 20px;">Col 3</div>
+
+</div>
+
+<div class="row" style="margin: 10px;">
+    <div class="col-md-3" style="background-color:red; padding: 20px;">Col 1</div>
+    <div class="col-md-3" style="background-color:yellow; padding: 20px;">Col 2</div>
+    <div class="col-md-3" style="background-color:green; padding: 20px;">Col 3</div>
+    <div class="col-md-3" style="background-color:salmon; padding: 20px;">Col 3</div>
+
+</div>
+
+<div class="row" style="margin: 10px;">
+    <div class="col-md-3" style="background-color:green; padding: 20px;">Col 3</div>
+    <div class="col-md-9" style="background-color:salmon; padding: 20px;">Col 3</div>
+</div>
+
+<div class="row">
+    <input type="text" class="text-danger" id="idTeste" />
+</div>
+<div class="row">
+    @Html.TextBox("txtTeste2", null, new { @class = "text-success", placeholder = "Testessss" })
+</div>
