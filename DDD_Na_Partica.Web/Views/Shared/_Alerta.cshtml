@@ -1,0 +1,26 @@
+﻿@using DDD_Na_Partica.Web.Models
+@using DDD_Na_Partica.Web.Helpers
+
+@{
+    var alertas = TempData.ContainsKey(Alerta.TempDataKey)
+        ? (List<Alerta>)TempData[Alerta.TempDataKey]
+        : new List<Alerta>();
+
+    if (alertas.Any())
+    {
+        foreach (var alerta in alertas)
+        {
+            var dismissableClass = alerta.Dismissable ? "alert-dismissable" : null;
+
+            <div class="alert alert-@alerta.AlertaStyle @dismissableClass">
+                @if (alerta.Dismissable)
+                {
+                    <button type="button" class="close" data-dismiss="alert" arial-hidden="true">
+                        &times;
+                    </button>
+                }
+                @Html.Raw(alerta.Message)
+            </div>
+        }
+    }
+}

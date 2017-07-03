@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace DDD_Na_Partica.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {

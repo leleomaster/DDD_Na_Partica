@@ -1,4 +1,5 @@
-﻿using DDD_Na_Partica.Web.Models;
+﻿using DDD_Na_Partica.Web.Helpers;
+using DDD_Na_Partica.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Web.Mvc;
 
 namespace DDD_Na_Partica.Web.Controllers
 {
-    // https://www.youtube.com/watch?v=ynlY4ovHwcY&index=8&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM
+    // https://www.youtube.com/watch?v=22JTNKdQ8wM&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM&index=10
 
     /*
     
@@ -16,7 +17,7 @@ namespace DDD_Na_Partica.Web.Controllers
      */
 
 
-    public class UsuarioController : Controller
+    public class UsuarioController : BaseController
     {
         private static List<UsuarioViewModel> ListaUsuario = null;
 
@@ -48,28 +49,31 @@ namespace DDD_Na_Partica.Web.Controllers
         }
         [HttpPost]
         public ActionResult CadAlter(UsuarioViewModel model)
-        {
+        {          
             try
             {
                 if (ModelState.IsValid)
                 {
                     CadastrarUsuario(model);
 
+                    Success("Usuário cadastrado com sucesso!", true);
+
                     return View("Index", ListaUsuario);
                 }
                 else
                 {
-
+                    Warning("Verifique todos os erros!", true);
                     return View(model);
                 }
             }
             catch (Exception ex)
             {
-
+                Danger("Ocorreu um erro, entre em contato com o administrador do sistem.", true);
                 throw;
             }
         }
 
+        
         public void CadastrarUsuario(UsuarioViewModel model)
         {
 

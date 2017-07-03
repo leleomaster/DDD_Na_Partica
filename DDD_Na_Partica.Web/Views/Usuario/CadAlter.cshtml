@@ -5,6 +5,10 @@
     Layout = "~/Views/Shared/_LayoutNew.cshtml";
 }
 
+@{
+    Html.RenderPartial("~/Views/Shared/_Alerta.cshtml");
+}
+
 <h2>Usuário</h2>
 
 @using (Html.BeginForm("CadAlter", "Usuario", FormMethod.Post, new { id = "fmUsuario", encType = "multipar/form-data" }))

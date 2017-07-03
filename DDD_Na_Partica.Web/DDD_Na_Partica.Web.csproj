@@ -154,11 +154,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Alerta.cs" />
     <Compile Include="Models\TesteViewBag_Data_TempData.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -173,6 +175,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutNew.cshtml" />
     <Content Include="Views\Shared\_partial_Teste_ViewBag_Data_TempData.cshtml" />
+    <Content Include="Views\Shared\_Alerta.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -184,8 +187,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\Site\css\" />
     <Folder Include="Content\Site\Imagens\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Scripts\Site\" />
+    <Folder Include="Views\BaseController\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DDD_Na_Partica.Application\DDD_Na_Partica.Application.csproj">
