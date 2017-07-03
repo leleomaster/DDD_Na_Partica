@@ -1,0 +1,6 @@
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Domain\bin\Debug\DDD_Na_Partica.Domain.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Domain\bin\Debug\DDD_Na_Partica.Domain.pdb
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Domain\obj\Debug\DDD_Na_Partica.Domain.csprojResolveAssemblyReference.cache
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Domain\obj\Debug\DDD_Na_Partica.Domain.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Domain\obj\Debug\DDD_Na_Partica.Domain.pdb
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Domain\bin\Debug\DomainValidation.dll

@@ -1,0 +1,9 @@
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\bin\Debug\DDD_Na_Partica.Tests.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\bin\Debug\DDD_Na_Partica.Tests.pdb
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\bin\Debug\DDD_Na_Partica.Domain.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\bin\Debug\DomainValidation.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\bin\Debug\DDD_Na_Partica.Domain.pdb
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\obj\Debug\DDD_Na_Partica.Tests.csprojResolveAssemblyReference.cache
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\obj\Debug\DDD_Na_Partica.Tests.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Tests\obj\Debug\DDD_Na_Partica.Tests.pdb
