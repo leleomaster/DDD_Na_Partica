@@ -1,4 +1,6 @@
-﻿using DDD_Na_Partica.Web.Helpers;
+﻿using DDD_Na_Partica.Application.IppServices;
+using DDD_Na_Partica.Domain.Entities;
+using DDD_Na_Partica.Web.Helpers;
 using DDD_Na_Partica.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -8,26 +10,37 @@ using System.Web.Mvc;
 
 namespace DDD_Na_Partica.Web.Controllers
 {
-    // https://www.youtube.com/watch?v=22JTNKdQ8wM&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM&index=10
+    /* https://www.youtube.com/watch?v=CQdjTWrwC00&index=16&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM
 
+        depois veja este
+        https://www.youtube.com/playlist?list=PLGIlu09hjGAHoEi62-c0Ui2pzcY6gTtCj
+    */
     /*
     
+        /**
+         Instalar o Ninject.MVC5
+         http://www.ninject.org/
+         * 
      * Fazer depois Curso de TDD mais nUnit
      https://www.youtube.com/playlist?list=PLb2HQ45KP0WvzEKQ56AZ7j5-Gsay9yPOg
      */
 
-
+    [Authorize(Roles = "UsuarioCadastro")]
     public class UsuarioController : BaseController
     {
-        private static List<UsuarioViewModel> ListaUsuario = null;
+        private readonly IAppServiceUsuario appServiceUsuario;
 
-        public UsuarioController()
+        public UsuarioController(IAppServiceUsuario _appServiceUsuario)
         {
+            appServiceUsuario = _appServiceUsuario;
             ListaUsuario = GetUsuarios();
         }
 
+        private static List<UsuarioViewModel> ListaUsuario = null;
+
         public ActionResult Index()
         {
+            Usuario usua = appServiceUsuario.LoginUsuario("*******", "leleo_0");
 
             var models = ListaUsuario;
 
@@ -49,7 +62,7 @@ namespace DDD_Na_Partica.Web.Controllers
         }
         [HttpPost]
         public ActionResult CadAlter(UsuarioViewModel model)
-        {          
+        {
             try
             {
                 if (ModelState.IsValid)
@@ -73,7 +86,13 @@ namespace DDD_Na_Partica.Web.Controllers
             }
         }
 
-        
+        public JsonResult VerificaUsuario(string idUsuario)
+        {
+            string retorno = ListaUsuario.FirstOrDefault(u => u.Id == Convert.ToInt32(idUsuario ?? "1")).Nome;
+
+            return Json(new { Nome = retorno }, JsonRequestBehavior.AllowGet);
+        }
+
         public void CadastrarUsuario(UsuarioViewModel model)
         {
 

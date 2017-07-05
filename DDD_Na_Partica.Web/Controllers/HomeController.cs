@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace DDD_Na_Partica.Web.Controllers
 {
+    [Authorize(Roles = "Cursos")]
     public class HomeController : BaseController
     {
         public ActionResult Index()
@@ -27,6 +28,6 @@ namespace DDD_Na_Partica.Web.Controllers
             TempData["Nomes_TempData"] = nomes;
 
             return View();
-        }        
+        }
     }
 }

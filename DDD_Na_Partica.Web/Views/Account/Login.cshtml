@@ -1,0 +1,51 @@
+﻿@model DDD_Na_Partica.Web.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+@{
+    Html.RenderPartial("~/Views/Shared/_Alerta.cshtml");
+}
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post, new { id = "formsLogin" }))
+{
+    <div class="row">
+        <span>Formulário de Login</span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.LabelFor(u => u.Nome, new { @class = "form-control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(u => u.Nome, new { @class = "span12 m-wrap", maxlength = "20" })
+                    <span class="colorRed help-block">
+                        @Html.ValidationMessageFor(u => u.Nome)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.LabelFor(u => u.Senha, new { @class = "form-control-label" })
+                <div class="controls">
+                    @Html.TextBoxFor(u => u.Senha, new { @class = "span12 m-wrap", maxlength = "20" })
+                    <span class="colorRed help-block">
+                        @Html.ValidationMessageFor(u => u.Senha)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <button type="submit" class="btn btn-primary">
+            Salvar
+        </button>
+    </div>
+
+}
+

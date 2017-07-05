@@ -21,18 +21,62 @@
     <tbody>
         @foreach (var usuario in Model)
         {
-        <tr>
-            <td>@usuario.Nome</td>
+            <tr>
+                <td>@usuario.Nome</td>
 
-            <td>@usuario.Login</td>
+                <td>@usuario.Login</td>
 
-            <td>@(usuario.Ativo == false ? "Inativo" : "Ativo")</td>
-        </tr>
+                <td>@(usuario.Ativo == false ? "Inativo" : "Ativo")</td>
+            </tr>
         }
     </tbody>
 </table>
 
 <div class="row">
-  
+
     @Html.ActionLink("Novo", "CadAlter", "Usuario", new { @class = "btn btn-primary" })
 </div>
+
+<div class="row">
+    <span id="spanNome"></span>
+    <br />
+    <input type="text" id="txtNumero"/>
+    <br />
+    <input type="button" id="btnBuscarNome" value="Buscar Nome Usuario" class="btn btn-primary" />
+</div>
+
+@section scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log("Ready");
+            addEvents();
+        });
+
+        function addEvents() {
+            $("#btnBuscarNome").on("click", function () {
+                GetNomeUsuario($("#txtNumero").val());
+            });
+        }
+
+        // https://viacep.com.br/
+
+        function GetNomeUsuario(_idUsuario) {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("VerificaUsuario", "Usuario")',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8;",
+                data: { idUsuario: _idUsuario },
+                success: function (dados) {
+                    $("#spanNome").text(dados.Nome);
+    },
+                error:function(e, rr, msg){
+        alert(rr);
+    }
+});
+        }
+
+
+    </script>
+}

@@ -27,5 +27,7 @@ namespace DDD_Na_Partica.Web.Models
 
         [Display(Name = "Ativo")]
         public bool Ativo { get; set; }
+
+        public string Permissao { get; set; }
     }
 }

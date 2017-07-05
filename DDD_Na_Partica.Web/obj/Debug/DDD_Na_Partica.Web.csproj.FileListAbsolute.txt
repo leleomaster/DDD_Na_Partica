@@ -79,3 +79,12 @@ D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\WebGrease.dll
 D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Antlr3.Runtime.pdb
 D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Newtonsoft.Json.xml
 D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\System.Web.Optimization.xml
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\DDD_Na_Partica.Infrastructure.Repository.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Ninject.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Ninject.Web.Common.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Ninject.Web.Mvc.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\WebActivatorEx.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\DDD_Na_Partica.Infrastructure.Repository.pdb
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Ninject.xml
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Ninject.Web.Common.xml
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Web\bin\Ninject.Web.Mvc.xml

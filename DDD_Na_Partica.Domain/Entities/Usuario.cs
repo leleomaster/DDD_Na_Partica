@@ -17,6 +17,7 @@ namespace DDD_Na_Partica.Domain.Entities
         public string Senha { get; set; }
 
         public bool Ativo { get; set; }
+        public string Permissao { get; set; }
 
     }
 }

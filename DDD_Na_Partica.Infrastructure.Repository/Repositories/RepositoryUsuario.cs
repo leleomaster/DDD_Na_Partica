@@ -12,7 +12,31 @@ namespace DDD_Na_Partica.Infrastructure.Repository.Repositories
     {
         public Usuario LoginUsuario(string senha, string usuario)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (senha == "123" && usuario == "leo")
+                {
+                    Usuario usuar = new Usuario()
+                    {
+                        Ativo = true,
+                        Id = 1,
+                        Login = "leleo_0",
+                        Nome = "Leonardo",
+                        Senha = "*********",
+                        Permissao = "Cursos;UsuarioCadastro"
+                    };
+
+                    return usuar;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

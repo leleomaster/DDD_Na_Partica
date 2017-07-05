@@ -56,6 +56,18 @@
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -76,6 +88,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
@@ -152,6 +168,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
@@ -161,6 +178,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Alerta.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\TesteViewBag_Data_TempData.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,6 +194,7 @@
     <Content Include="Views\Shared\_LayoutNew.cshtml" />
     <Content Include="Views\Shared\_partial_Teste_ViewBag_Data_TempData.cshtml" />
     <Content Include="Views\Shared\_Alerta.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -194,6 +213,14 @@
     <ProjectReference Include="..\DDD_Na_Partica.Application\DDD_Na_Partica.Application.csproj">
       <Project>{aed7adca-2216-49c8-a12f-96c99044d88c}</Project>
       <Name>DDD_Na_Partica.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DDD_Na_Partica.Domain\DDD_Na_Partica.Domain.csproj">
+      <Project>{10ED6EBD-02EB-4A3D-9A13-49579F5BE0A9}</Project>
+      <Name>DDD_Na_Partica.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DDD_Na_Partica.Infrastructure.Repository\DDD_Na_Partica.Infrastructure.Repository.csproj">
+      <Project>{0E1CDE63-273A-4F30-8128-ED48ADCAE5D3}</Project>
+      <Name>DDD_Na_Partica.Infrastructure.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
