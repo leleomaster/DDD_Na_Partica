@@ -22,6 +22,7 @@
                     @Html.ActionLink("Usuario", "Index", "Usuario", new { area = "" }, new { @class = "navbar-brand" })
 
                     @Html.ActionLink("Sair", "LogOff", "Account", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Sair", "Index", "Pessoa", new { area = "" }, new { @class = "navbar-brand" })
 
                     <span style="color:yellowgreen;">Olá - @HttpContext.Current.User.Identity.Name</span>
                 </div>

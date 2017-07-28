@@ -10,6 +10,8 @@ namespace DDD_Na_Partica.Web.Models
     {
         public int Id { get; set; }
 
+        public int IdPessoa { get; set; }
+
         [Required(ErrorMessage = "Campo obrigatório")]
         [Display(Name = "Nome")]
         [MaxLength(150, ErrorMessage = "Campo com tamanho máximo de 150 caracteres")]

@@ -6,3 +6,5 @@ D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Infrastructure.Repository\obj\Debug\DD
 D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Infrastructure.Repository\obj\Debug\DDD_Na_Partica.Infrastructure.Repository.dll
 D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Infrastructure.Repository\obj\Debug\DDD_Na_Partica.Infrastructure.Repository.pdb
 D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Infrastructure.Repository\bin\Debug\DomainValidation.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Infrastructure.Repository\bin\Debug\Dapper.dll
+D:\Projetos\DDD_Na_Partica\DDD_Na_Partica.Infrastructure.Repository\bin\Debug\Dapper.xml

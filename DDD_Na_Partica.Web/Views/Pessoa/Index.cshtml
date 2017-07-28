@@ -1,0 +1,22 @@
+﻿@model IEnumerable<DDD_Na_Partica.Web.Models.PessoaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Dados da pessoa</h2>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>@Html.DisplayNameFor(m => m.Usuario.Nome) </tr>
+        <tr>@Html.DisplayNameFor(m => m.CPFPessoa) </tr>
+        <tr>@Html.DisplayNameFor(m => m.Usuario.Login) </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td></td>
+        </tr>
+    }
+</table>

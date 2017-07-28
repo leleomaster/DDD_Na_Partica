@@ -10,21 +10,6 @@ using System.Web.Mvc;
 
 namespace DDD_Na_Partica.Web.Controllers
 {
-    /* https://www.youtube.com/watch?v=CQdjTWrwC00&index=16&list=PLKzcE63mS1V1zvjQViINZAaFliO0-NDIM
-
-        depois veja este
-        https://www.youtube.com/playlist?list=PLGIlu09hjGAHoEi62-c0Ui2pzcY6gTtCj
-    */
-    /*
-    
-        /**
-         Instalar o Ninject.MVC5
-         http://www.ninject.org/
-         * 
-     * Fazer depois Curso de TDD mais nUnit
-     https://www.youtube.com/playlist?list=PLb2HQ45KP0WvzEKQ56AZ7j5-Gsay9yPOg
-     */
-
     [Authorize(Roles = "UsuarioCadastro")]
     public class UsuarioController : BaseController
     {
@@ -99,6 +84,15 @@ namespace DDD_Na_Partica.Web.Controllers
             var usuarios = ListaUsuario;
 
             usuarios.Add(model);
+                        
+            var sql = @"select * from DapperDesigners D JOIN Products P  ON P.DapperDesignerId = D.Id";
+
+            //var designers = conn.Query<DapperDesigner, Product, DapperDesigner>(sql, (designer, product) => 
+            //{
+
+            //    designer.Products.Add(product);
+            //    return designer;
+            //});
         }
 
         public static List<UsuarioViewModel> GetUsuarios()
@@ -132,4 +126,25 @@ namespace DDD_Na_Partica.Web.Controllers
             };
         }
     }
+
+    public class DapperDesigner
+    {
+        public DapperDesigner()
+        {
+            Products = new List<Product>();
+            Clients = new List<Client>();
+        }
+        public int Id { get; set; }
+        public string LabelName { get; set; }
+        public string Founder { get; set; }
+        public Dapperness Dapperness { get; set; }
+        public List<Client> Clients { get; set; }
+        public List<Product> Products { get; set; }
+        public ContactInfo ContactInfo { get; set; }
+    }
+
+    public class Product { }
+    public class Dapperness { }
+    public class ContactInfo { }
+    public class Client { }
 }

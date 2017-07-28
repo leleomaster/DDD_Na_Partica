@@ -173,12 +173,15 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PessoaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Alerta.cs" />
+    <Compile Include="Helpers\Mapeamento.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\PessoaViewModel.cs" />
     <Compile Include="Models\TesteViewBag_Data_TempData.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,6 +198,8 @@
     <Content Include="Views\Shared\_partial_Teste_ViewBag_Data_TempData.cshtml" />
     <Content Include="Views\Shared\_Alerta.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Pessoa\Index.cshtml" />
+    <Content Include="Views\Pessoa\CadastrarAlterar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

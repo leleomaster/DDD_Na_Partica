@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppServices\AppServicePessoa.cs" />
     <Compile Include="AppServices\AppServiceUsuario.cs" />
+    <Compile Include="IppServices\IAppServicePessoa.cs" />
     <Compile Include="IppServices\IAppServiceUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

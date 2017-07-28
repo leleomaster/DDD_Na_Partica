@@ -70,6 +70,10 @@ namespace DDD_Na_Partica.Web.App_Start
             kernel.Bind<IAppServiceUsuario>().To<AppServiceUsuario>();
             kernel.Bind<IRepositoryUsuario>().To<RepositoryUsuario>();
             kernel.Bind<IServiceUsuario>().To<ServiceUsuario>();
+
+            kernel.Bind<IAppServicePessoa>().To<AppServicePessoa>();
+            kernel.Bind<IPessoaRepository>().To<PessoaRepository>();
+            kernel.Bind<IServicePessoa>().To<ServicePessoa>();
         }        
     }
 }
